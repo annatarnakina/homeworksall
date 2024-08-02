@@ -1,0 +1,26 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.wrapp {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: rgb(92, 205, 92);
+    width: 5rem;
+}
+p,
+input,
+button,
+label {
+    margin: 0.4rem 0;
+    text-align: center;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<label for="start">Дни до дня рождения</label>
+
+<div class="wrapp">
+    <input type="date" id="start" name="trip-start" value="0000-00-00" min="2024-00-01" max="2024-12-31" />
+    <button onclick="calculateDaysBeforeBirthDay()">Посчитать</button>
+</div>
+<p id="result"></p>
+</body>
+<script src="./date.js"></script>
+</html>
