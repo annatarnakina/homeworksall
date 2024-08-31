@@ -1,0 +1,20 @@
+.main {
+    background-color: rgb(161, 157, 157);
+    height: max-content;
+}
+h1 {
+    font-size: 1rem;
+}
+
+li {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+ul :nth-child(5n) {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+ul :nth-child(6n) {
+    font-weight: bold;
+}
