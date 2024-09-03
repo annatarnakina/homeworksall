@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Форма</title>
+</head>
+<body>
+    <h2>Форма регистрации</h2>
+
+    <form id="registrationForm" name="registrationForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required pattern="[A-Za-zА-Яа-яЁё\s]{2,20}">
+        <p class="error" id="nameError" name="nameError"></p>
+    
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+        <p class="error" id="emailError" name="emailError"></p>
+    
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age" placeholder="Введите ваш возраст" required>
+        <p class="error" id="ageError"></p>
+    
+        <label>Пол:</label>
+        <label><input type="radio" name="gender" value="male"> Мужчина</label>
+        <label><input type="radio" name="gender" value="female"> Женщина</label>
+    
+        <label for="profession">Профессия:</label>
+        <select id="profession" name="profession" required>
+            <option value="" disabled selected>Выберите профессию</option>
+            <option value="doctor">Врач</option>
+            <option value="programmer">Программист</option>
+            <option value="teacher">Учитель</option>
+            <option value="designer">Дизайнер</option>
+            <option value="engineer">Инженер</option>
+            <option value="seller">Продавец</option>
+            <option value="other">Другое</option>
+        </select>
+        <p class="error" id="professionError"></p>
+    
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}">
+        <p class="error" id="passwordError"></p>
+    
+        <label><input type="checkbox" id="consent" name="consent" required> Я согласен с обработкой данных</label>
+        <p class="error" name="consentError" id="consentError"></p>
+    
+        <input type="submit" id="submitBtn" name="submitBtn" value="Зарегистрироваться" disabled>
+    </form>
+</body>
+<script src="./secForm.js"></script>
+</html>
+
+<!-- 1. Создайте HTML-страницу с формой для регистрации пользователя, 
+содержащую следующие поля:
+
+- Поле ввода имени: обязательное поле, должно содержать 
+только буквы и пробелы. Длина имени должна быть от 2 до 20 символов. 
+Должно иметь атрибуты placeholder и required.
+- Поле ввода электронной почты: обязательное поле, 
+должно быть в формате email (содержать символ '@' и доменное имя). 
+Должно иметь атрибуты placeholder и required.
+- Поле ввода возраста: обязательное поле. 
+Должно иметь атрибуты placeholder и required.
+- Поле выбора пола: представленное в виде radio buttons 
+для выбора между мужчиной и женщиной
+- Поле выбора профессии: обязательное поле, 
+представленное в виде выпадающего списка (select). 
+Должно иметь атрибуты required и placeholder для выбора профессии. 
+Варианты профессий: Врач, Программист, Учитель, Дизайнер, Инженер, 
+Продавец, Другое.
+- Поле ввода пароля: обязательное поле, должно быть не менее 
+8 символов длиной и содержать как минимум одну заглавную букву, 
+одну строчную букву и одну цифру. 
+Должно иметь атрибуты placeholder, required, minlength и pattern.
+- Поле checkbox, показывающее согласие пользователя с обработкой данных. 
+Должно иметь атрибут required.
+Кнопка отправки формы
+2. Добавьте стили для формы -- >

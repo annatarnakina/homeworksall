@@ -1,0 +1,23 @@
+#registrationForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem
+}
+
+h2 {
+    text-align: center;
+}
+
+input:required:valid {
+    border-color: green;
+}
+
+.error {
+    color: red;
+}
+
+#submitBtn:enabled {
+    background-color: rgb(126, 240, 91);
+    color: black;
+}
