@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SW</title>
+</head>
+<body>
+    <form id="formSerch" class="form">
+    <h2>Кого или что будем искать?</h2>
+<select id="speciesSW">
+    <option value="NoCheck"></option>
+    <option value="people">Персонажей</option>
+    <option value="planets">Планеты</option>
+    <option value="films">Фильмы</option>
+    <option value="starships">Корабли</option>
+</select>
+    <input id="idSpecie" type="number" placeholder="Введите номер">
+    <button type="submit" id="goBtn" class="btn">Вперёд!</button>
+</form>
+    <p id="forResult"></p>
+    <p id="forError" class="error"></p>
+    <script src="./index.js"></script>
+</body>
+</html>
