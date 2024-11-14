@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.card {
+  width: 21.1875rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px 10px rgba(27, 26, 26, 0.2)
+}
+
+.card-footer {
+  width: 21rem
+}
+
+.character {
+  width: 21rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
