@@ -1,15 +1,15 @@
 function SideMenu() {
     return (
         <div className="sideMenu">
-            <ul className="menu">
+            <ul className="nav">
                 <li>
-                <a target="_blank" href="#"> Главная</a>
+                    <p>Главная</p>
                 </li>
                 <li>
-                <a target="_blank" href="#"> Обучение</a>
+                    <p>Обучение</p>
                 </li>
                 <li> 
-                <a target="_blank" href="#"> Изученные слова </a>
+                    <p>Изученные слова</p>
                 </li>
             </ul>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import CardWord from './CardWord';
 
 function CardList() {

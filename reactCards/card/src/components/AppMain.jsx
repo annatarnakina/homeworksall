@@ -1,18 +1,16 @@
 import React from 'react';
 import SideMenu from './SideMenu';
 import CardList from './CardList';
+import WordsList from './WordsList';
 
-function Main() {
+function AppMain() {
     return (
     <React.Fragment>
-        <aside>
             <SideMenu />
-        </aside>
-        <div>
             <CardList />
-        </div>
+            <WordsList />
     </React.Fragment>
     )
 }
 
-export default Main;
+export default AppMain;

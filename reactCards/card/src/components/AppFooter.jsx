@@ -1,4 +1,4 @@
-function Footer() {
+function AppFooter() {
     return (
         <div className="footer">
             <p>Контакты</p>
@@ -6,4 +6,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default AppFooter;
