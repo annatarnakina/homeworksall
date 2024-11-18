@@ -1,11 +1,11 @@
-import CardList from '../content/CardList'
 import SideMenu from './SideMenu';
+import CardList from '../content/cardList';
 
 function Main() {
     return (
     <div>
         <aside>
-        <SideMenu />
+            <SideMenu />
         </aside>
         <div>
             <CardList />

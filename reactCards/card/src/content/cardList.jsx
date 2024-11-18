@@ -1,16 +1,16 @@
 import React from 'react'
-import Card from './CardWord';
+import CardWord from './CardWord';
 
 function CardList() {
     return (
         <React.Fragment>
-            <Card
+            <CardWord
 
             />
-            <Card
+            <CardWord
 
             />
-            <Card
+            <CardWord
 
             />
         </React.Fragment>

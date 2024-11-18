@@ -1,4 +1,4 @@
-function Card(props) {
+function CardWord(props) {
     return (
         <div className="card">
             <div className="card-body">
@@ -12,4 +12,4 @@ function Card(props) {
     );
 }
 
-export default Card;
+export default CardWord;
