@@ -1,16 +1,17 @@
+import React from 'react';
 import SideMenu from './SideMenu';
-import CardList from '../content/cardList';
+import CardList from './CardList';
 
 function Main() {
     return (
-    <div>
+    <React.Fragment>
         <aside>
             <SideMenu />
         </aside>
         <div>
             <CardList />
         </div>
-    </div>
+    </React.Fragment>
     )
 }
 

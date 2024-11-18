@@ -3,13 +3,13 @@ function SideMenu() {
         <div className="sideMenu">
             <ul className="menu">
                 <li>
-                    <link href="#" Главная/>
+                <a target="_blank" href="#"> Главная</a>
                 </li>
                 <li>
-                <link href="#" Обучение/>
+                <a target="_blank" href="#"> Обучение</a>
                 </li>
                 <li> 
-                <link href="#" Изученные слова/>
+                <a target="_blank" href="#"> Изученные слова </a>
                 </li>
             </ul>
         </div>
